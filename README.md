@@ -40,13 +40,24 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+    I knew nothing about Express before this week. Express is a web application framework that uses nodej.js. It adds functionality that can help you, such as routing and middleware support.
+    It has helpers, which hepl writing API servers and applications easier.
+
 - [ ] Describe Middleware?
+
+    Middleware is an functions lets you get access to the request object and response object. They get executed in the order they are introduced in the code. Out of the box, express middleware is compitable with connect middleware. You can have third party middleware modules, such as helmet or cors. Custom middleware is functions that you write yourself to perform specific tasks.
 
 - [ ] Describe a Resource?
 
+    A resource is data within the API, an object with data, and methods that operate on it. CRUD operations can be perofmed on it.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+    An APi can return response status codes. In this case, 200 means it was successful.
+
 - [ ] How can we partition our application into sub-applications?
+
+    Expresses can use server side routing, which helps keeps thing clean. It allows specific files, routes, to perform crud operations.
 
 ## Minimum Viable Product
 

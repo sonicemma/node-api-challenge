@@ -61,6 +61,7 @@ router.delete('/:id', (req, res) => {
 })
 
 function validateAction(req, res, next) {
+
     if (!req.body.project_id || !req.body.description || ! req.body.notes) {
         res.status(400).json({message: `Error: provide a valid project id, description, and notes`});
     } else if (req.body.description.length > 128) {
@@ -69,6 +70,5 @@ function validateAction(req, res, next) {
         next();
     }
 }
-
 
 module.exports = router;
