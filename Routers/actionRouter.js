@@ -2,6 +2,7 @@ const express = require('express');
 const Actions = require('../data/helpers/actionModel');
 
 const router = express.Router();
+
 router.use(express.json());
 
 router.get('/', (req, res) => {
