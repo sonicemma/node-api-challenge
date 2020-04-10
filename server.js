@@ -1,7 +1,12 @@
 const express = require('express');
+const morgan = require('morgan');
+const helmet = require('helmet');
 const server = express();
 const actionsRouter = require('./Routers/actionRouter');
 const projectRouter = require('./Routers/projectRouter');
+
+server.use(morgan('short'));
+server.use(helmet());
 
 server.use('/api/action', actionsRouter);
 server.use('/api/project', projectRouter)
